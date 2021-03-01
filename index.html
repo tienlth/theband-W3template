@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The band</title>
+    <link rel="icon" href="https://www.w3schools.com/w3images/chicago.jpg" type="image/jpg" sizes="16x16">
     <link rel="stylesheet" href="./asest/css/style.css">
     <link rel="stylesheet" href="asest/css/icons/fontawesome-free-5.15.2-web/css/all.css">
 <body>
 
     <div id="header">
         <ul id="nav">
-            <li></a><a href="">Home</a></li></a>
-            <li></a><a href="">Band</a></li></a>
-            <li></a><a href="">Tour</a></li></a>
-            <li></a><a href="">Contact</a></li></a>
+            <li></a><a href="#slider">Home</a></li></a>
+            <li></a><a href="#content">Band</a></li></a>
+            <li></a><a href="#tour">Tour</a></li></a>
+            <li></a><a href="#contact">Contact</a></li></a>
             <li></a>
-                <a href="">More <i class="fas fa-caret-down"></i></a>
+                <a style="cursor: pointer;">More <i class="fas fa-caret-down"></i></a>
                 <ul class="subnav">
                     <li></a><a href="">Merchandise</a></li></a>
                     <li></a><a href="">Extras</a></li></a>
@@ -51,18 +52,18 @@
                 at.
             </p>
 
-            <div class="about-img">
-                <p>name</p>
+            <div class="about-img col-third">
+                <p class="font15-and-line-height15">name</p>
                 <img height="153" width="153" src="https://www.w3schools.com/w3images/bandmember.jpg" alt="img">
             </div>
 
-            <div class="about-img">
-                <p>name</p>
+            <div class="about-img col-third">
+                <p class="font15-and-line-height15">name</p>
                 <img height="153" width="153" src="https://www.w3schools.com/w3images/bandmember.jpg" alt="img">
             </div>
 
-            <div class="about-img">
-                <p>name</p>
+            <div class="about-img col-third">
+                <p class="font15-and-line-height15">name</p>
                 <img height="153" width="153" src="https://www.w3schools.com/w3images/bandmember.jpg" alt="img">
             </div>
 
@@ -99,14 +100,9 @@
 
                 <div id="tour-article">
 
-                    <div class="article">
+                    <div class="article col-third">
 
-                        <div class="article-img">
-
-                            <img width="245" height="184" src="https://www.w3schools.com/w3images/newyork.jpg" alt="img1">
-                            <div class="cover"></div>
-
-                        </div>
+                        <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="img1">
 
                         <div class="article-content">
 
@@ -131,14 +127,9 @@
 
                     </div>
 
-                    <div class="article">
+                    <div class="article col-third">
 
-                        <div class="article-img">
-
-                            <img width="245" height="184" src="https://www.w3schools.com/w3images/paris.jpg" alt="img1">
-                            <div class="cover"></div>
-
-                        </div>                        
+                        <img src="https://www.w3schools.com/w3images/paris.jpg" alt="img1">    
                         
                         <div class="article-content">
 
@@ -162,14 +153,9 @@
 
                     </div>
 
-                    <div class="article">
+                    <div class="article col-third">
 
-                        <div  class="article-img">
-
-                            <img width="245" height="184" src="https://www.w3schools.com/w3images/sanfran.jpg" alt="img1">
-                            <div class="cover"></div>
-
-                        </div>
+                        <img src="https://www.w3schools.com/w3images/sanfran.jpg" alt="img1">
                         
                         <div class="article-content">
 
@@ -327,8 +313,8 @@
 
         function showform(){
             layer.style.display='block';
-            layer.style.animation='formtransition 0.5s';
-            form.style.animation='showform 0.5s'
+            form.style.animation='formtransition 0.5s';
+            form.style.animation+=', showform 0.5s'
             form.style.opacity='1';
         }
 
