@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size:62.5%;
+    line-height: 1.15;
+    font-family: "Roboto", sans-serif;
+    height:1000px; /*  */
+}
+
+.main-col{
+    margin: auto;
+    width: 100%;
+    max-width: 984px;
+}
